@@ -8,7 +8,7 @@
  */
 
 import React, { useState } from 'react';
-import commonStyles from '../../components/common/styles/styles.module.css';
+import Classes from '../../components/common/styles/styles.module.css';
 import styles from './AddBoard.module.css';
 import { addBoard } from '../../utils/data';
 import { Alert } from '../../components/alert/Alert';
@@ -58,7 +58,7 @@ export const AddBoard = ({ history }) => {
           {error}
         </Alert>
       )}
-      <h2 className={commonStyles.title}>Create a board</h2>
+      <h2 className={Classes.title}>Create a board</h2>
       <div className={styles.field}>
         <label htmlFor="name">Enter a name for your board</label>
         <input
@@ -96,7 +96,7 @@ export const AddBoard = ({ history }) => {
         <button
           type="submit"
           onClick={saveBoard}
-          className={commonStyles.info}
+          className={Classes.info}
           id="CreateBoard"
         >
           Create

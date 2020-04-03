@@ -14,7 +14,7 @@
 
 import React, { useEffect, useState } from 'react';
 import * as shortid from 'shortid';
-import FaTrash from 'react-icons/fa';
+import { Loader } from '../../components/loader/Loader';
 import Classes from '../../components/common/styles/styles.module.css';
 import styles from './Board.module.css';
 import {
@@ -25,7 +25,6 @@ import {
   deleteColumn,
   deleteBoard,
 } from '../../utils/data';
-import { Loader } from '../../components/loader/Loader';
 import { Card } from '../../components/Card/Card';
 import { AddCard } from '../../components/AddCard/AddCard';
 import { AddColumn } from '../../components/AddColumn/AddColumn';
@@ -221,7 +220,12 @@ export const Board = ({ match, history }) => {
                       className={styles.trash}
                       onClick={() => handleDeleteColumn(column)}
                     >
-                      <FaTrash />
+                      <i
+                        className="material-icons"
+                        style={{ fontSize: '25px' }}
+                      >
+                        delete_outline
+                      </i>
                     </div>
                   </header>
                   <ul

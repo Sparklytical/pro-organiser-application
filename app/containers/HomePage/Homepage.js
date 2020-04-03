@@ -9,7 +9,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import styles from './HomePage.module.css';
 import commonStyles from '../../components/common/styles/styles.module.css';
 import { getBoards } from '../../utils/data';

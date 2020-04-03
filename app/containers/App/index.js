@@ -37,6 +37,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/createboard" component={AddBoard} />
         <Route path="/board/:name" component={Board} />
+        <Route exact path="*" component={HomePage} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

@@ -1,35 +1,9 @@
 import React from 'react';
 import './loader.scss';
+import LoaderImg from '../common/assets/images/Blocks-1s-200px.svg';
 
-export const Loader = () => {
-  return (
-    <div className="loader-container">
-      <div className="boxes">
-        <div className="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div className="box">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-    </div>
-  );
-};
+export const Loader = () => (
+  <div className="loader-container">
+    <img src={LoaderImg} alt="loader" />
+  </div>
+);

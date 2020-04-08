@@ -1,3 +1,5 @@
-# PRO - Organizer
+# Pro organiser app
 
-## TODO- Add Support for react beautiful dnd
+## to do
+
+### Add React beautiful DND
